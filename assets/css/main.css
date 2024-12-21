@@ -63,6 +63,10 @@ nav ul li a:hover {
   color: #444;
 }
 
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
 
 .title {
   text-align: center;
