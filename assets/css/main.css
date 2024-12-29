@@ -30,6 +30,32 @@ header {
   display: flex;
 }
 
+@keyframes wave {
+  0% {
+      transform: rotate(0deg);
+  }
+  25% {
+      transform: rotate(5deg);
+  }
+  50% {
+      transform: rotate(0deg);
+  }
+  75% {
+      transform: rotate(-5deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+.logo {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s;
+}
+.logo:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -250,6 +276,7 @@ footer {
     color: #000;
     text-align: center;
     padding: 1rem;
+    padding-left: 50px;
     margin-top: 2rem;
     font-size: 1.2rem;
     font-weight: bold;
