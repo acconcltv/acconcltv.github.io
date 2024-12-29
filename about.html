@@ -6,25 +6,47 @@
     <title>Acoon - Creative Design</title>
     <link
       rel="stylesheet"
-      href="/assets/css/main.css"
+      href="/Users/msofiirvan12gmail.com/Documents/Project/Tugas Kuliah/Accon/assets/css/main.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      @keyframes fadeSlide {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    
+      .fade-slide {
+        animation: fadeSlide 1.5s ease-out forwards;
+      }
+    
+      html {
+          scroll-behavior: smooth; 
+        }
+        section {
+        scroll-margin-top: 300px; 
+      }
+    </style>
+
+
   </head>
   <body class="bg-black text-white font-sans">
    
     <header class="bg-lime-400 py-4 px-6 flex justify-between items-center">
       <div class="absolute top-0 left-0 px-4"></div>
-        <img src="/assets/img/logofixxx22.png" alt="logo" class="h-12">
+        <img src="/Users/msofiirvan12gmail.com/Documents/Project/Tugas Kuliah/Accon/assets/img/logofixxx22.png" alt="logo" class="h-12">
       <nav class="space-x-6">
         <a href="index.html" class="text-black text-2xl font-semibold hover:underline"
           >Home</a
         >
-        <a href="event.html" class="text-black text-2xl font-semibold hover:underline"
-          >Event</a
-        >
-        <a href="gallery.html" class="text-black text-2xl font-semibold hover:underline"
-          >Gallery </a
-        >
+        <a href="index.html#event" class="text-black text-2xl font-semibold hover:underline">Event</a>
+        <a href="index.html#gallery" class="text-black text-2xl font-semibold hover:underline">Gallery</a>
         <a href="about.html" class="text-black text-2xl font-semibold hover:underline"
           >About Us</a
         >
@@ -34,9 +56,9 @@
     
     <main class="flex-1 flex justify-center items-center text-center px-4">
       <div>
-        <h1 class="text-8xl font-bold mb-12 mt-12">About us</h1>
-        <p class="text-2xl leading-relaxed">
-          Accon Collective adalah sebuah komunitas sosial yang bergerak dibidang kreatif terutama design, Accon Collective merupakan sebuah kolektif mahasiswa DKV UPI angkatan 22 yang dibentuk pada tahun 2024, Accon Collective diambil dari 2 kata bahasa inggris yaitu (Act) dan (Confused) yang disatukan menjadi Accon, seperti namanya Accon Collective merupakan kelompok yang dibuat berdasarkan keresahan dan kebingungan (confused) tetapi akan selalu memberikan aksi (act). Accon collective juga sudah banyak membuat aktivasi kolaborasi maupun independent dikampus maupun luar kampus.
+        <h1 class="text-8xl font-bold mb-12 mt-12 fade-slide">About us</h1>
+        <p class="text-2xl leading-relaxed fade-slide">
+          Accon Collective adalah sebuah komunitas sosial yg bergerak dibidang kreatif terutama design, Accon Collective merupakan sebuah kolektif mahasiswa DKV UPI angkatan 22 yg dibentuk pada tahun 2024, Accon Collective diambil dari 2 kata bahasa inggris yaitu (Act) dan (Confused) yg disatukan menjadi Accon, seperti namanya Accon Collective merupakan kelompok yg dibuat berdasarkan keresahan dan kebingungan (confused) tetapi akan selalu memberikan aksi (act). Accon collective juga sudah banyak membuat aktivasi kolaborasi maupun independent dikampus maupun luar kampus.
         </p>
     
     <footer class="bg-white text-black py-6 px-8 flex justify-between items-center">
@@ -46,6 +68,11 @@
         <p>📱 <a href="https://wa.me/6281574744619/" class="text-xl hover:underline">+62 815-7474-4619</a></p>
           <p>📱 <a href="https://wa.me/6289648132086/" class="text-xl hover:underline">+62 896-4813-2086</a></p>
       </div>
+
+      <div class="flex justify-between items-center text-sm py-1 px-8">
+        <span>Creative Design From 2k24</span>
+      </div>
+
       <div class="text-2xl">
         <p class="uppercase text-2xl font-semibold tracking-wide">Follow us</p>
         <p>📸 <a href="https://www.instagram.com/accon.cltve?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-xl hover:underline">accon.cltve</a></p>
