@@ -6,8 +6,8 @@
     <title>Accon - Creative Design</title>
     <link
       rel="stylesheet"
-      href="/assets/css/main.css"
-      href="/assets/css/main.css"
+      href="/Users/msofiirvan12gmail.com/Documents/Project/Tugas Kuliah/Accon/assets/css/main.css"
+      href="/Users/msofiirvan12gmail.com/Documents/Project/Tugas Kuliah/Accon/assets/js/main.js"
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -26,6 +26,13 @@
   .fade-slide {
     animation: fadeSlide 1.5s ease-out forwards;
   }
+
+  html {
+      scroll-behavior: smooth; 
+    }
+    section {
+    scroll-margin-top: 300px; 
+  }
 </style>
 
 
@@ -34,34 +41,30 @@
     
     <header class="bg-lime-400 py-4 px-6 flex justify-between items-center">
       <div class="absolute top-0 left-0 px-4"></div>
-        <img src="/assets/img/logofixxx22.png" alt="logo" class="h-12">
+      
+      <div class="logo">
+        <img src="assets/img/logofixxx22.png" alt="Logo">
+    </div>
       <nav class="space-x-6">
-        <a href="index.html" class="text-black text-2xl font-semibold hover:underline"
-          >Home</a
-        >
-        <a href="event.html" class="text-black text-2xl font-semibold hover:underline"
-          >Event</a
-        >
-        <a href="gallery.html" class="text-black text-2xl font-semibold hover:underline"
-          >Gallery </a
-        >
+        <a href="#home" class="text-black text-2xl font-semibold hover:underline">Home</a>
+        <a href="#event" class="text-black text-2xl font-semibold hover:underline">Event</a>
+        <a href="#gallery" class="text-black text-2xl font-semibold hover:underline">Gallery</a>
         <a href="about.html" class="text-black text-2xl font-semibold hover:underline"
-          >About Us</a
-        >
+        >About Us</a>
       </nav>
     </header>
 
    
     <section
-      class="relative bg-cover bg-center h-[50vh]"
-      style="background-image: url('assets/img/heroimage.png')"
+    id="home" class="relative bg-cover bg-center h-[50vh] fade-slide"
+      style="background-image: url('/Users/msofiirvan12gmail.com/Documents/Project/Tugas Kuliah/Accon/assets/img/Heroimage.png')"
     >
       
       <div class="absolute inset-0 bg-black opacity-50"></div>
       
       <div class="title-container">
         <h1 class="animated-title">Accon</h1>
-        <p class="animated-subtitle">Collective</p>
+        <p class="animated-subtitle">Act and Confused</p>
       </div>
     </section>
 
@@ -81,13 +84,171 @@
     </div>
   </div>
 </main>
-    
-    <footer
-      class="flex justify-between items-center py-6 px-8 text-sm bg-black"
-    >
-      <span>Creative Design</span>
-      <span>From 2024</span>
-    </footer>
 
+<main>
+  <h2 id="event" class="title text-8xl font-bold py-20 mb-20 mt-20">Event</h2>
+  <div class="event-container">
+    
+    <div class="event-card">
+      <a href="#event">
+      <img
+        src="/Users/msofiirvan12gmail.com/Documents/Project/Tugas Kuliah/Accon/assets/img/saychees.png"
+        alt="Say Chess"
+      />
+      <h3>Say Chess</h3>
+      <p>Bandung, Indonesia<br />At Mural UPI Mei 16 - 2024</p>
+      </a>
+    </div>
+     
+     <div class="event-card">
+      <a href="#event">
+      <img
+        src="/Users/msofiirvan12gmail.com/Documents/Project/Tugas Kuliah/Accon/assets/img/tcp.png"
+        alt="Take Cut & Paste"
+      />
+      <h3>Take Cut & Paste</h3>
+      <p>Bandung, Indonesia<br />Wangirupa Studio Jun 28 - 2024</p>
+      </a>
+    </div>
+   
+    <div class="event-card"> 
+      <a href="#event">
+      <img
+        src="/Users/msofiirvan12gmail.com/Documents/Project/Tugas Kuliah/Accon/assets/img/aycp.png"
+        alt="All You Can Print"
+      />
+      <h3>All You Can Print</h3>
+      <p>Bandung, Indonesia<br />At Mural UPI Sep 11 - 2024</p>
+      </a>
+    </div>
+    
+    <div class="event-card">
+      <a href="#event">
+      <img
+        src="/Users/msofiirvan12gmail.com/Documents/Project/Tugas Kuliah/Accon/assets/img/finder6.png"
+        alt="Collaboration Finder 6"
+      />
+      <h3>Collaboration Finder 6</h3>
+      <p>Bandung, Indonesia<br />At FPSD UPI Oct 25 - 2024</p>
+      
+  </div>
+</main>
+
+<h2 id="gallery" class="title text-8xl font-bold py-20 mb-20 mt-20">Gallery</h2>
+  <div class="Gallery-container">
+
+<section class="photo-grid">
+  <div class="photo-group photo1">
+    <img src="assets/img/sayceskiri.png" alt="Group Photo">
+  </div>
+  <div class="photo-group photo2">
+    <img src="assets/img/sayceskanan.png" alt="Chess Game">
+  </div>
+</section>
+
+
+<section class="description">
+  <p>
+    "Foto ini diabadikan pas acara perdana <span class="highlight">Accon Collective</span> yang digelar pada <span class="italic">16 Mei 2024</span> di Taman Mural, <span class="highlight">Universitas Pendidikan Indonesia</span>. Acara ini jadi panggung kreatif buat mahasiswa UPI yang ngeramein suasana dengan penuh energi, karya, dan vibes yang pecah abis!""
+  </p>
+</section>
+
+
+<footer class="footer">
+  <p>Say Chess. Say Chess. Say Chess. Say Chess.</p>
+</footer>
+</body>
+</html>
+
+
+<section class="photo-grid">
+  <div class="photo-group photo1">
+    <img src="assets/img/tcpkiri.png" alt="Group Photo">
+  </div>
+  <div class="photo-group photo2">
+    <img src="assets/img/tcpkanan.png" alt="Chess Game">
+  </div>
+</section>
+
+
+<section class="description">
+  <p>
+    "Foto ini diambil pada gelaran <span class="highlight">Accon Collective</span> ang berkolaboarasi dengan <span class="italic">Pandang exhibition</span> tanggal, <span class="highlight">24 Oktober 2024</span>. di <span class="italic">Wangirupa studio. </span> Acara Take Cut & Paste ini menjadi sarana  kreatif bagi mahasiswa untuk mengekspresikan imajinasi mereka.""
+  </p>
+</section>
+
+
+<footer class="footer">
+  <p>Take Cut & Paste.Take Cut & Paste.</p>
+</footer>
+</body>
+</html>
+
+
+<section class="photo-grid">
+<div class="photo-group photo1">
+  <img src="assets/img/aycpkiri.png" alt="Group Photo">
+</div>
+<div class="photo-group photo2">
+  <img src="assets/img/aycpkanan.png" alt="Chess Game">
+</div>
+</section>
+
+
+<section class="description">
+<p>
+  "Foto ini diambil pada acara <span class="highlight">Accon Collective</span> yang dilaksanakan pada <span class="italic">16 Mei 2024,</span> All You Cant Print adalah acara <span class="highlight">Accon Collective</span> yang mewadahi bentuk kreatif bagi mahasiswa <span class="highlight">Universitas Pendidikan Indonesia</span>.""
+</p>
+</section>
+
+
+<footer class="footer">
+<p> All You Can Print. All You Can Print</p>
+</footer>
+</body>
+</html>
+
+
+<section class="photo-grid">
+<div class="photo-group photo1">
+  <img src="assets/img/finderkiri.png" alt="Group Photo">
+</div>
+<div class="photo-group photo2">
+  <img src="assets/img/finderkanan.png" alt="Chess Game">
+</div>
+</section>
+
+
+<section class="description">
+<p>
+  "Foto ini diabadikan pada Acara <span class="highlight">Finder 6</span> di tanggal <span class="italic">25 Oktober 2024.</span>  <span class="highlight">Accon Collective</span>, Menjadi pengisi acara sekaligus jadi panggung kreatif bagi mahasiswa <span class="highlight">Universitas Pendidikan Indonesia</span>.""
+</p>
+</p>
+</section>
+
+<footer class="footer">
+  <p>Colaboration Finder 6.Colaboration Finder 6</p>
+</footer>
+</body>
+</html>
+
+
+ <footer class="bg-white text-black py-6 px-8 flex justify-between items-center">
+      <div class="text-2xl space-y">
+        <p class="uppercase text-2xl font-semibold tracking-wide">Contact</p>
+        <p>📧 <a href="mailto:accon.cltve@gmail.com" class="text-xl hover:underline">accon.cltve@gmail.com</a></p>
+        <p>📱 <a href="https://wa.me/6281574744619/" class="text-xl hover:underline">+62 815-7474-4619</a></p>
+          <p>📱 <a href="https://wa.me/6289648132086/" class="text-xl hover:underline">+62 896-4813-2086</a></p>
+      </div>
+
+      <div class="flex justify-between items-center text-sm py-1 px-8">
+        <span>Creative Design From 2k24</span>
+      </div>
+
+      <div class="text-2xl">
+        <p class="uppercase text-2xl font-semibold tracking-wide">Follow us</p>
+        <p>📸 <a href="https://www.instagram.com/accon.cltve?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-xl hover:underline">accon.cltve</a></p>
+      </div>
+    </footer>
   </body>
 </html>
